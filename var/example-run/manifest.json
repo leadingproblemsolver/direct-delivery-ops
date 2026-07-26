@@ -1,0 +1,43 @@
+{
+  "files": {
+    "artifact_first/candidate_shortlist.md": {
+      "bytes": 37,
+      "sha256": "2f9821aba8cd4e754483f046ca1a6c366296740600824b4ee7f0f2d1a279f120"
+    },
+    "candidate_register.csv": {
+      "bytes": 160,
+      "sha256": "c93cf233dec48c7cb83cbd02b85d902399a78144b804c597a2b5b8425d0ec57c"
+    },
+    "continuity.yaml": {
+      "bytes": 173,
+      "sha256": "0e7a08c9fb45f67efe2327ed0337330e141417d2322bbb30f8d316e11d8dc418"
+    },
+    "embedded_service/operator_shortlist.md": {
+      "bytes": 38,
+      "sha256": "29767a5073be183b5bb118957eea84a355b755f40ce7680701e5b1c02e62db06"
+    },
+    "evidence_log.yaml": {
+      "bytes": 132,
+      "sha256": "b7d2631d6b21007c55f3514a04e3922135ca376e1f69d05637e6995e3b91cf88"
+    },
+    "human_approval_queue.md": {
+      "bytes": 164,
+      "sha256": "5864fa4ea7fca558f101e79375a4567807dc6342d0b38ed9959d5b7dd60ff114"
+    },
+    "pain_triggered/candidate_shortlist.md": {
+      "bytes": 37,
+      "sha256": "396e2697be9c858aca74b508886f6a3e4451e44d80863a52b23fad19ae7fa1f0"
+    },
+    "run_summary.md": {
+      "bytes": 103,
+      "sha256": "043ce46c903c30c4d23c9afad9d891750eaec2b77fd592626ca212684f8addd4"
+    },
+    "verification_report.yaml": {
+      "bytes": 80,
+      "sha256": "7add239b8cd18a1a1b76a63a23ef56cdef4a56be17d9d1124593a1aa8394bf5b"
+    }
+  },
+  "root": "/mnt/data/final-untouched-upgrade/repositories/direct-delivery-ops/var/example-run",
+  "schema_version": "1.0.0",
+  "send_actions_executed": false
+}

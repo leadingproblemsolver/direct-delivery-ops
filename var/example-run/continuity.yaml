@@ -1,0 +1,10 @@
+run:
+  current_phase: discovery
+  completed_without_sending: true
+artifact_index: {}
+unresolved: {}
+approval_state:
+  approved: []
+  revise: []
+  rejected: []
+  pending: []
