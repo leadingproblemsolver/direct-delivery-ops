@@ -35,18 +35,20 @@ def import_signalops_route(
     account = str(receipt.get("account_name") or "").strip()
     contact = str(receipt.get("contact_name") or "").strip()
     role = str(receipt.get("contact_title") or "").strip()
+    source_url = str(receipt.get("contact_profile_url") or receipt.get("artifact_url") or "").strip()
     fit = receipt.get("fit_reasons") or ()
     if isinstance(fit, str):
         fit_reasons = (fit.strip(),) if fit.strip() else ()
     else:
         fit_reasons = tuple(str(item).strip() for item in fit if str(item).strip())
     artifact = proposed_artifact.strip()
-    if not route_key or not account or not contact or not role or not fit_reasons or not artifact:
-        raise ValueError("route_key, account/contact identity, role, fit_reasons, and proposed_artifact are required")
+    if not route_key or not account or not contact or not role or not source_url or not fit_reasons or not artifact:
+        raise ValueError(
+            "route_key, account/contact identity, role, source URL, fit_reasons, and proposed_artifact are required"
+        )
     if str(receipt.get("next_action") or "").strip() != "human_review":
         raise ValueError("upstream route must terminate at human_review")
 
-    source_url = str(receipt.get("profile_url") or receipt.get("artifact_url") or "").strip()
     evidence = "; ".join(fit_reasons)
     values = {
         "track": track,
